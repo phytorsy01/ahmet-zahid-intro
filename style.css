@@ -1,0 +1,290 @@
+#Hero {
+    background-color: #EAB2BB;
+    position: relative;
+    right: 8px;
+    bottom: 8px;
+    width: 100vw;
+    height: 769px;
+    padding: 0;
+    margin: 0;
+}
+#Hero > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    font-size: 80pt;
+    color: #3C6CA8;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+    margin-block-start: 0.7em;
+    margin-block-end: 0;
+}
+#student {
+    font-size: 46pt;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+#Introduction {
+    background-color: #3C6CA8;
+    position: relative;
+    right: 8px;
+    bottom: 8px;
+    width: 100vw;
+    height: 769px;
+    padding: 0;
+}
+#Introduction > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 126px;
+    padding: 80px;
+    padding-bottom: 40px;
+}
+#paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#paragraph > p {
+    font-family: "Poppins", sans-serif;
+    font-size: 22pt;
+    color: #fff;
+    margin-block-start: 50px;
+}
+#paragraph > #hi {
+    font-family: "Bitter", serif;
+    font-weight: 600;
+    color: #ffde59;
+    font-size: 45pt;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+#Resume {
+    background-color: #B78FD6;
+    position: relative;
+    right: 8px;
+    bottom: 24px;
+    height: 769px;
+    width: 100vw;
+    padding: 0;
+}
+.resume {
+    display: grid;
+}
+.heading {
+    font-family: "Poppins", sans-serif;
+    color: #ffde59;
+    font-size: 45pt;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+}
+#circle {
+    display: grid;
+    grid-template-columns: 1fr 768px 1fr;
+    /* grid-template-rows: 100px 250px 50px 100px 200px; */
+    grid-template-rows: 1fr 1fr 100px 134px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#circle .graphic {
+    height: 768px;
+    grid-area: 1 / 2 / -1 / 3;
+    align-self: center;
+} 
+/* .resume p {
+    /* z-index: 1; */
+    /* grid-area: 1 / 2 / 2 / 3; */
+
+p#res.heading {
+    grid-area: 1 / 2 / span 1 / span 1;
+    margin: 0;
+    justify-self: center;
+}
+.para {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+.programmer {
+    grid-area: 2 / 1 / span 3 / span 1;
+    justify-self: end;
+    align-self: center;
+}
+.programming {
+    grid-area: 2 / 3 / span 3 / span 1;
+    align-self: center;
+}
+a#link.para {
+    grid-area: 3 / 2 / span 1 / span 1;
+    color: #3C6CA8;
+    justify-self: center;
+    font-size: 30pt;
+    text-decoration: none;
+}
+p#prog.heading {
+    grid-area: 4 / 2 / span 1 / span 1;
+    margin: 0;
+    justify-self: center;
+    align-self: start;
+}
+p#firstp {
+    grid-area: 2 / 2 / span 1 / span 1;
+    justify-self: center;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+}
+p#secondp {
+    grid-area: 5 / 2 / span 1 / span 1;
+    justify-self: center;
+    align-self: start;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+#Skills {
+    background-color: #3C6CA8;
+    position: relative;
+    right: 8px;
+    bottom: 24px;
+    width: 100vw;
+    height: 769px;
+    padding: 0;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 700px 1fr 1fr;
+    grid-template-rows: 50px 50px 1fr 80px 1fr 1fr;
+}
+
+.basketball {
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+
+.football {
+    grid-area: 3 / 4 / span 1 / span 1;
+}
+
+.esports {
+    grid-area: 5 / 2 / span 2 / span 2;
+    align-self: center;
+}
+
+.pc {
+    grid-area: 5 / 4 / span 2 / span 2;
+    align-self: center;
+}
+
+#mysk {
+    grid-area: 2 / 3 / span 1 / span 1;
+    justify-self: center;
+}
+#sports {
+    grid-area: 2 / 3 / span 2 / span 1;
+    justify-self: center;
+    align-self: center;
+}
+#thirdp {
+    grid-area: 3 / 3 / span 2 / span 1;
+    text-align: center;
+    align-self: end;
+}
+#gaming {
+    grid-area: 4 / 3 / span 2 / span 1;
+    justify-self: center;
+    align-self: center;
+}
+#fourthp {
+    grid-area: 5 / 3 / span 2 / span 1;
+    text-align: center;
+    align-self: center;
+}
+
+.bigheading {
+    font-family: "Poppins", sans-serif;
+    font-size: 40pt;
+    color: #ffde59;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.skills > .heading {
+    font-size: 28pt;
+}
+
+.para {
+    font-size: 18px;
+ }
+ p.para#fourthp {
+    font-size: 22px;
+ }
+
+#Contact {
+    background-color: #5eb090;
+    position: relative;
+    right: 8px;
+    bottom: 24px;
+    width: 100vw;
+    height: 769px;
+    padding: 0;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact > p {
+    font-family: "Poppins", sans-serif;
+    font-size: 30pt;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+p.contactme#contactme {
+    font-size: 50pt;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 10px;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    position: relative;
+    bottom: 24px;
+    width: 100vw;
+    height: 100px;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  } 
